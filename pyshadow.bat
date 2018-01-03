@@ -4,5 +4,5 @@ python pyshadow.py
 taskkill /im Shadowsocks.exe /f
 @echo Launching Shadowsocks...
 start Shadowsocks
-@echo All set,let's enjoy the open world£¡
+@echo All set,let's enjoy the open world.
 pause
