@@ -8,7 +8,7 @@
 ## 安装 
 1. 安装 python3.x
 2. 将项目clone到本地，拷贝 PyShadow.py，PyShadow.bat，gui-config_template.json 使它们和 Shadowsocks.exe在同一目录下。
-3. 安装依赖文件
+3. 安装依赖
 ```
 pip install -r requirements.txt
 ```

@@ -60,6 +60,7 @@ if __name__ =="__main__":
     #存放着最新的ishadowsocks地址的url
     url_url='https://coding.net/u/ElliottZheng/p/elliottzheng.coding.me/git/raw/master/pyshadow_config/ishadowsocks'
     #获取最新的ishadowsocks地址
+    print("Fetching the latest url of iShadowSocks...")
     url =fetch_new_url(url_url)
     
     #配置文件名
@@ -68,10 +69,13 @@ if __name__ =="__main__":
     
     #获取最新的html id列表
     id_list_url='https://coding.net/u/ElliottZheng/p/elliottzheng.coding.me/git/raw/master/pyshadow_config/id_list.json'
+    print("Fetching the latest iShadowSocks' html ip set....")
     id_list=fetch_id_list(id_list_url)
+
     
     data=json.load(open(bak_config_file_name))
     #存放到名字列表中
+    print("Fetching the latest Free SS sever,port,and password ....")
     fetch(url,id_list,data)
     
     store(config_file_name,data)
