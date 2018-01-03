@@ -23,7 +23,7 @@ pip install -r requirements.txt
 2. 从服务器上获取id_list.json,也就是html元素的id列表，帮助我们通过beautifulsoup找到服务器ip，密码，端口。
 3. requests 爬取iShadowSocks，通过beautifulsoup解析，查找，最后保存到gui-configs.json中（以[gui-config_template.json](./gui-config_template.json)为模板）
 ### 注
-　　网址文件和id_list.json现在托管在coding（国内速度还是可以），现在每次应该可以获取12个服务器ip，密码，端口。按照顺序从上到下，每3个为一组，分别为美国，日本，新加坡，SSR。**默认设置的是美国服务器，但是为了服务器均衡，具体是哪个服务器，是由随机数决定的**。。。如果想切换服务器，请打开SS自行切换。
+　　网址文件和id_list.json现在托管在coding（国内速度还是可以），现在每次应该可以获取12个服务器ip，密码，端口。按照顺序从上到下，每3个为同一种类型，分别为美国，日本，新加坡，SSR。**默认设置的是美国服务器，但是具体是哪个美国服务器，是随机的**。。。如果想切换服务器，请打开SS自行切换。
 
 ## 原理
 基于requests、Beautifulsoup
