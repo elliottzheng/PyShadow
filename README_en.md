@@ -2,7 +2,6 @@
 [中文 Chinese](./README.md)
 
 A python script that automatically gets the iShadowsocks free SS sever、port and password and deployed to SS client.
-##.
 - iShadowSocks  provides free SS , but it will change the password ( or port ) every six hours , which is unhandy.
 - [pyshadow.py](./pyshadow.py) can help you get the latest free SS server IP, password,and port from ishdowshocks, and update the SS configuration file(gui-config.json).
 - [pyshadow.bat](./pyshadow.bat) calls [pyshadow.py](./pyshadow.py) to help you update the configuration of SS and restart it.
