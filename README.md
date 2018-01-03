@@ -13,6 +13,7 @@
 pip install -r requirements.txt
 ```
 ## 使用方法
+
 - 运行 PyShadow.py 更新gui-config.json 内的服务器配置
 - 或双击运行 **PyShadow.bat** 除了帮你更新完服务器ip，端口，密码之后还顺便帮你关闭失效的SS再打开新的SS。
 
@@ -25,3 +26,5 @@ pip install -r requirements.txt
 
 ## 原理
 基于requests、Beautifulsoup
+
+
