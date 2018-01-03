@@ -8,7 +8,6 @@ import random
 
 
 
-
 def store(filename,data):
     with open(filename, 'w') as json_file:
         json_file.write(json.dumps(data))
@@ -32,7 +31,9 @@ def fetch(baseUrl,id_list,data):
         temp["server_port"]=int(soup.find("span",id=one_id['port']).text)
         temp["password"]=int(soup.find("span",id=one_id['password']).text)
         data['configs'].append(temp)
-    data["index"]=random.randint(0,len(id_list)-1)
+        
+    #设置当前服务器为美国服务器中的任意一个，(0,2)三个服务器为美国服务器
+    data["index"]=random.randint(0,2)
     return
     # 第3步：返回在页面上析取的元素
 
@@ -62,7 +63,7 @@ if __name__ =="__main__":
     url =fetch_new_url(url_url)
     
     #配置文件名
-    bak_config_file_name="gui-config2.json"
+    bak_config_file_name="gui-config_template.json"
     config_file_name="gui-config.json"
     
     #获取最新的html id列表
@@ -72,9 +73,6 @@ if __name__ =="__main__":
     data=json.load(open(bak_config_file_name))
     #存放到名字列表中
     fetch(url,id_list,data)
-
-    # 输出 List
-    print(data["configs"])
     
     store(config_file_name,data)
     
