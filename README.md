@@ -2,18 +2,17 @@
 　　自动获取iShadowsocks服务器ip，密码，端口并部署到SS客户端的python脚本
 ## 作用
 - iShadowSocks上提供免费的SS，但是有一个问题就是它每六个小时会更新一次密码（可能还有端口），这就不太方便。
-- PyShadow.py帮你爬取ishdowshocks上最新的免费SS服务器ip，密码，端口，并写入SS的配置文件 gui-config.json。
-- PyShadow.bat调用PyShadow.py帮你更新完服务器，端口，密码之后顺便帮你关闭失效的SS再打开新的SS。
+- **PyShadow.py**帮你爬取ishdowshocks上最新的免费SS服务器ip，密码，端口，并写入SS的配置文件 gui-config.json。
+- **PyShadow.bat**调用**PyShadow.py**帮你更新完服务器，端口，密码之后顺便帮你关闭失效的SS再打开新的SS。
 
 ## 安装 
 1. 安装 python3.x
 2. 将项目clone到本地，拷贝 PyShadow.py，PyShadow.bat，gui-config_template.json 使它们和 Shadowsocks.exe在同一目录下。
-3. 安装依赖文件
+3. 安装依赖
 ```
 pip install -r requirements.txt
 ```
 ## 使用方法
-
 - 运行 PyShadow.py 更新gui-config.json 内的服务器配置
 - 或双击运行 **PyShadow.bat** 除了帮你更新完服务器ip，端口，密码之后还顺便帮你关闭失效的SS再打开新的SS。
 
@@ -26,5 +25,3 @@ pip install -r requirements.txt
 
 ## 原理
 基于requests、Beautifulsoup
-
-
